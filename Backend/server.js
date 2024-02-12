@@ -13,22 +13,26 @@ Connect_to_Database();
 
 // --------------------------Deploy------------------------------
 const __dirnameapdclproject = path.resolve();
-if (process.env.NODE_ENV === "productions") {
-  app.use(express.static(path.join(__dirnameapdclproject, "../build")));
+if ("productions") {
+  console.log("Entered");
+  app.use(express.static(path.join(__dirnameapdclproject, "../apdcl/build")));
+  console.log("got build");
   app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirnameapdclproject, "build", "index.html"));
+    res.sendFile(
+      path.resolve(__dirnameapdclproject, "../apdcl/build", "index.html")
+    );
+    console.log("sent build");
   });
 } else {
-  app.get("/"),
-    (req, res) => {
-      res.send("Api is running");
-    };
+  app.get("/", (req, res) => {
+    res.send("Api is running");
+  });
 }
 
 // --------------------------------------------------------------
-app.get("/", (res, req) => {
-  res.send("Api is running");
-});
+// app.get("/", (res, req) => {
+//   res.send("Api is running");
+// });
 
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "http://localhost:3000");

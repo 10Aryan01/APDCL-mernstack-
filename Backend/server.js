@@ -12,18 +12,18 @@ app.use(express.json());
 Connect_to_Database();
 
 // --------------------------Deploy------------------------------
-// const __dirnameapdclproject = path.resolve();
-// if (process.env.NODE_ENV === "productions") {
-//   app.use(express.static(path.join(__dirnameapdclproject, "../build")));
-//   app.get("*", (req, res) => {
-//     res.sendFile(path.resolve(__dirnameapdclproject, "build", "index.html"));
-//   });
-// } else {
-//   app.get("/"),
-//     (req, res) => {
-//       res.send("Api is running");
-//     };
-// }
+const __dirnameapdclproject = path.resolve();
+if (process.env.NODE_ENV === "productions") {
+  app.use(express.static(path.join(__dirnameapdclproject, "../build")));
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirnameapdclproject, "build", "index.html"));
+  });
+} else {
+  app.get("/"),
+    (req, res) => {
+      res.send("Api is running");
+    };
+}
 
 // --------------------------------------------------------------
 app.get("/", (res, req) => {

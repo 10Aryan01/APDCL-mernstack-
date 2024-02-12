@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4013f411.css",
+    "main.js": "/static/js/main.2b80e590.js",
+    "static/media/milad-fakurian-PGdW_bHDbpI-unsplash.jpg": "/static/media/milad-fakurian-PGdW_bHDbpI-unsplash.29b540441e048f1d9db1.jpg",
+    "static/media/opgamingmx.gif": "/static/media/opgamingmx.c0fb342af5f0190935ec.gif",
+    "static/media/apdcl_logo2-removebg-preview.png": "/static/media/apdcl_logo2-removebg-preview.4c2f4e349d3abc78b17d.png",
+    "static/media/warning.webp": "/static/media/warning.5f809b668495d2a55b5d.webp",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.4013f411.css.map": "/static/css/main.4013f411.css.map",
+    "main.2b80e590.js.map": "/static/js/main.2b80e590.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4013f411.css",
+    "static/js/main.2b80e590.js"
+  ]
+}

@@ -19,7 +19,7 @@ if ("productions") {
   console.log("got build");
   app.get("*", (req, res) => {
     res.sendFile(
-      path.resolve(__dirnameapdclproject, "../apdcl/build", "index.html")
+      path.resolve(__dirnameapdclproject, "build", "index.html")
     );
     console.log("sent build");
   });
